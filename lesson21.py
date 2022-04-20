@@ -57,3 +57,34 @@
 #         if my_list[j] > my_list[j + 1]:
 #             my_list[j], my_list[j + 1] = my_list[j + 1], my_list[j]
 # print(my_list)
+
+
+# -------------------Binary Search----------------------------
+
+# def bin(myList, n, start, stop):
+#     if start > stop:
+#         return False
+#     else:
+#         mid = (start + stop) // 2
+#         if n == myList[mid]:
+#             return mid
+#         elif n < myList[mid]:
+#             return bin(myList, n, start, mid - 1)
+#         else:
+#             return bin(myList, n, mid + 1, stop)
+
+# myList = [1, 2, 3, 5, 6, 7, 8, 11, 15, 22]
+# n = 5
+# start = 0
+# stop = len(myList)
+# print(bin(myList, n, start, stop))
+
+
+
+# ---------------------------------Bubble Sort -------------------------
+# myList = [5, 4, 10, 3, 25, 22, -2]
+# for i in range(0, len(myList) - 1):
+#     for j in range(0, len(myList) - i  - 1):
+#         if myList[j] > myList[j + 1]:
+#             myList[j], myList[j + 1] = myList[j + 1], myList[j]
+# print(myList)
